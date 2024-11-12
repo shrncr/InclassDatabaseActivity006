@@ -7,10 +7,10 @@ import EditForm from './components/editform';
 function App() {
   let [formID, setFormID] = useState(441);
   return (
-    <>
+    <div className="cont">
       <Sidebar setFormID = {setFormID}/>
       <EditForm FormID = {formID} setFormID = {setFormID}/>
-    </>
+    </div>
   );
 }
 

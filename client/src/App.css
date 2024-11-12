@@ -38,8 +38,15 @@ button {
 button:hover {
   background-color: #f242da;
 }
-
-
+.cont{
+  display:flex;
+  height: 100vh;
+  flex-direction: row;
+  overflow-y: scroll;
+}
+.scroll{
+  overflow-y: scroll;
+}
 input, textarea {
   width: 100%;
   padding: 10px;
@@ -56,4 +63,96 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: #f0f4f8;
+}
+.paintingthumb{
+  width:25vw;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #e3e7ec;
+  padding: 10px;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.preview {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: #d9dee5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+  border: 1px dashed #bbb;
+}
+
+.sidebar .item {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  width: 75%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.paintingthumb {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.paintingthumb h2 {
+  margin-bottom: 10px;
+}
+
+.paintingthumb input,
+.paintingthumb textarea,
+.paintingthumb button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.paintingthumb button {
+  background-color: #e542a9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.paintingthumb button:hover {
+  background-color: #b30092;
 }

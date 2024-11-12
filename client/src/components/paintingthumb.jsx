@@ -8,7 +8,7 @@ export default function PaintingThumb(props){
 
     }
     return(
-        <div>
+        <div className="paintingthumb">
             <img src={img} ></img>
             <button onClick={() =>changeForm(props.id)}>Edit</button>
 
