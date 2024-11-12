@@ -20,7 +20,7 @@ export default function Sidebar(props) {
     return (
         <div className='scroll'>
             {paintings.map((p, index) => (
-                <PaintingThumb key={index} image={p.ImageFileName} id = {p.PaintingID} setFormID={props.setFormID} /> // Return the component and add a key
+                <PaintingThumb key={index} image={p.ImageFileName} title={p.Title} id = {p.PaintingID} setFormID={props.setFormID} /> // Return the component and add a key
             ))}
         </div>
     );
